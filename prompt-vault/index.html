@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="The AI Prompt Vault by Sprout & Season: 120 ready-to-use prompts for work, money, business and everyday life. Copy, personalize, and use right away — no experience needed." />
+    <link rel="icon" href="data:," />
+    <title>AI Prompt Vault — 120 Ready-to-Use Prompts | Sprout &amp; Season</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --paper: #fbf6ee;
+        --paper-2: #f4ecdd;
+        --surface: #fffdf8;
+        --ink: #2e2a26;
+        --ink-soft: #6b6259;
+        --terra: #b4552d;
+        --terra-deep: #96431f;
+        --terra-ink: #fdf3e7;
+        --line: #e3d7c3;
+        --line-soft: #ece2cf;
+        --shadow: 0 18px 40px rgba(46, 42, 38, 0.10);
+        color-scheme: light;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        * { transition: none !important; }
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Public Sans", system-ui, -apple-system, sans-serif;
+        font-size: 1.0625rem;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1, h2, h3, .serif { font-family: "Newsreader", Georgia, serif; }
+      h1, h2, h3 { line-height: 1.12; margin: 0; font-weight: 600; }
+      p { margin: 0; }
+      a { color: var(--terra); }
+      img { max-width: 100%; display: block; }
+
+      .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+      section { padding: 64px 0; }
+      .brand { font-size: 0.85rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--terra); }
+      .section-head { max-width: 680px; margin-bottom: 36px; }
+      .section-head h2 { font-size: clamp(1.8rem, 4.5vw, 2.5rem); margin-bottom: 12px; }
+      .section-head p { color: var(--ink-soft); font-size: 1.08rem; }
+      .rule { width: 56px; height: 3px; background: var(--terra); border-radius: 2px; margin-bottom: 20px; }
+
+      /* ---------- Hero ---------- */
+      .hero { padding: 56px 0 64px; }
+      .hero-grid { display: grid; grid-template-columns: 1.02fr 0.98fr; gap: 48px; align-items: center; }
+      .hero h1 { font-size: clamp(2.5rem, 6vw, 3.8rem); font-weight: 700; letter-spacing: -0.01em; margin-top: 14px; }
+      .hero h1 em { font-style: italic; color: var(--terra); }
+      .hero .lede { margin-top: 18px; font-size: 1.2rem; color: var(--ink-soft); max-width: 34rem; }
+      .hero .intro { margin-top: 16px; color: var(--ink-soft); max-width: 34rem; }
+      .price-row { display: flex; align-items: baseline; gap: 14px; margin-top: 28px; }
+      .price { font-family: "Newsreader", Georgia, serif; font-size: 2.8rem; font-weight: 700; line-height: 1; }
+      .price-note { color: var(--ink-soft); font-size: 0.98rem; }
+      .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+      .hero-points { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px 22px; color: var(--ink-soft); font-size: 0.95rem; }
+      .hero-points span::before { content: "✓"; color: var(--terra); font-weight: 800; margin-right: 7px; }
+      .hero-art { border-radius: 20px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); background: var(--surface); }
+      .hero-art img { width: 100%; height: auto; }
+
+      .btn {
+        display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+        min-height: 52px; padding: 13px 30px; border-radius: 999px;
+        font-weight: 700; font-size: 1.05rem; text-decoration: none; cursor: pointer;
+        border: 1.5px solid transparent; transition: transform 0.15s ease, background 0.15s ease;
+        font-family: inherit;
+      }
+      .btn:active { transform: scale(0.98); }
+      .btn-terra { background: var(--terra); color: #fff; }
+      .btn-terra:hover { background: var(--terra-deep); }
+      .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+      .btn-ghost:hover { border-color: var(--terra); color: var(--terra); }
+
+      /* ---------- What's inside ---------- */
+      .inside-band { background: var(--paper-2); border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); }
+      .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+      .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 26px 24px; }
+      .card .count { display: inline-block; background: var(--terra); color: #fff; font-weight: 800; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 11px; border-radius: 999px; margin-bottom: 14px; }
+      .card h3 { font-size: 1.3rem; margin-bottom: 8px; }
+      .card p { color: var(--ink-soft); font-size: 0.97rem; }
+
+      /* ---------- Receive / notes ---------- */
+      .split { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+      .split h2 { font-size: clamp(1.6rem, 3.5vw, 2.1rem); margin-bottom: 18px; }
+      .tick-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+      .tick-list li { display: flex; gap: 12px; align-items: flex-start; }
+      .tick-list .tick { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--terra); color: #fff; display: grid; place-items: center; font-size: 0.85rem; font-weight: 800; margin-top: 2px; }
+      .tick-list span { color: var(--ink-soft); }
+      .tick-list strong { color: var(--ink); }
+      .note-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+      .note-list li { display: flex; gap: 12px; align-items: flex-start; color: var(--ink-soft); }
+      .note-list .dot { flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--terra); margin-top: 9px; }
+
+      /* ---------- Free gifts / footer ---------- */
+      .free-band { background: var(--terra-deep); color: var(--terra-ink); border-radius: 20px; padding: 40px; text-align: center; }
+      .free-band h2 { font-size: clamp(1.7rem, 4vw, 2.3rem); margin-bottom: 10px; }
+      .free-band p { color: rgba(253, 243, 231, 0.85); max-width: 34rem; margin: 0 auto 24px; }
+      .btn-light { background: var(--terra-ink); color: var(--terra-deep); }
+      .btn-light:hover { background: #fff; }
+      footer { padding: 40px 0 48px; color: var(--ink-soft); font-size: 0.93rem; }
+      .footer-row { display: flex; flex-wrap: wrap; gap: 10px 28px; justify-content: space-between; align-items: center; border-top: 1px solid var(--line); padding-top: 26px; }
+      footer a { padding: 6px 0; display: inline-block; }
+
+      @media (max-width: 900px) {
+        .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+        .card-grid { grid-template-columns: 1fr 1fr; }
+        .split { grid-template-columns: 1fr; gap: 40px; }
+      }
+      @media (max-width: 560px) {
+        section { padding: 48px 0; }
+        .card-grid { grid-template-columns: 1fr; }
+        .free-band { padding: 32px 22px; }
+        .hero-ctas .btn { width: 100%; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- ================= HERO ================= -->
+      <header class="hero">
+        <div class="wrap">
+          <div class="hero-grid">
+            <div>
+              <p class="brand">Sprout &amp; Season</p>
+              <h1>AI Prompt <em>Vault</em></h1>
+              <p class="lede">120 ready-to-use prompts for work, money, business &amp; everyday life.</p>
+              <p class="intro">Staring at a blank AI chat box, not sure what to type? Each prompt is written out in full, with simple [BRACKETS] where you add your own details, plus a short &ldquo;use it for&rdquo; note so you know exactly what it does. Copy, personalize, and use right away — no experience needed. Works with ChatGPT, Claude, Gemini, and other AI assistants.</p>
+              <div class="price-row">
+                <span class="price">$9.99</span>
+                <span class="price-note">One-time payment · Instant download</span>
+              </div>
+              <div class="hero-ctas">
+                <a class="btn btn-terra" href="https://buy.stripe.com/9B600c1PCbYV4YB1c27Zu0b">Get the AI Prompt Vault</a>
+                <a class="btn btn-ghost" href="#inside">See what&rsquo;s inside</a>
+              </div>
+              <div class="hero-points">
+                <span>120 prompts, written out in full</span>
+                <span>21-page PDF, US Letter</span>
+                <span>Print it or keep it on your phone</span>
+              </div>
+            </div>
+            <div class="hero-art">
+              <img src="cover.png" alt="AI Prompt Vault — 120+ ready-to-use prompts, by Sprout &amp; Season" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ================= WHAT'S INSIDE ================= -->
+      <section class="inside-band" id="inside">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="rule"></div>
+            <h2>What&rsquo;s inside</h2>
+            <p>Six sections, twenty prompts in each — practical help for the things you actually do every week.</p>
+          </div>
+          <div class="card-grid">
+            <div class="card">
+              <span class="count">20 prompts</span>
+              <h3>Money &amp; Budgeting</h3>
+              <p>Household budgets, debt payoff planning, savings goals, and bill negotiation scripts — for education and organization.</p>
+            </div>
+            <div class="card">
+              <span class="count">20 prompts</span>
+              <h3>Small Business &amp; Side Projects</h3>
+              <p>Product descriptions, customer replies, shop FAQs, naming, and simple marketing copy for your shop or project.</p>
+            </div>
+            <div class="card">
+              <span class="count">20 prompts</span>
+              <h3>Work &amp; Productivity</h3>
+              <p>Emails, meeting notes, reports, weekly planning, resumes and cover letters — the everyday writing of work, made easier.</p>
+            </div>
+            <div class="card">
+              <span class="count">20 prompts</span>
+              <h3>Content &amp; Social Media</h3>
+              <p>Video ideas, hooks, captions, blog outlines, and posting calendars to keep your content steady.</p>
+            </div>
+            <div class="card">
+              <span class="count">20 prompts</span>
+              <h3>Learning &amp; Study</h3>
+              <p>Plain-English explanations, quizzes, flashcards, study plans, and language practice for learners of any age.</p>
+            </div>
+            <div class="card">
+              <span class="count">20 prompts</span>
+              <h3>Home &amp; Everyday Life</h3>
+              <p>Meal planning, decluttering, travel planning, gift ideas, and letters — a hand with the small jobs at home.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= RECEIVE / PLEASE NOTE ================= -->
+      <section>
+        <div class="wrap">
+          <div class="split">
+            <div>
+              <h2>You will receive</h2>
+              <ul class="tick-list">
+                <li><span class="tick">✓</span><span><strong>1 PDF file</strong> — 21 pages, US Letter — as an instant download after purchase.</span></li>
+                <li><span class="tick">✓</span><span><strong>A &ldquo;How to use these prompts&rdquo; guide</strong> at the front, so you can start in minutes.</span></li>
+                <li><span class="tick">✓</span><span><strong>Yours to keep</strong> — print it, or keep it on your phone, tablet, or computer and copy straight from the page.</span></li>
+              </ul>
+            </div>
+            <div>
+              <h2>Please note</h2>
+              <ul class="note-list">
+                <li><span class="dot"></span><span>This is a <strong>digital download</strong> — no physical item will be shipped.</span></li>
+                <li><span class="dot"></span><span>You will need a free or paid account with an AI assistant (such as ChatGPT, Claude, or Gemini) to use the prompts — the vault is the prompt collection itself.</span></li>
+                <li><span class="dot"></span><span>For <strong>personal use</strong>.</span></li>
+                <li><span class="dot"></span><span>The Money &amp; Budgeting section is for <strong>education and organization only — this is not financial advice</strong>.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FREE GIFTS ================= -->
+      <section style="padding-top: 0;">
+        <div class="wrap">
+          <div class="free-band">
+            <h2>Not ready yet?</h2>
+            <p>Start with our free gifts — a printable party game sampler and a weekly money tracker, on the house.</p>
+            <a class="btn btn-light" href="https://clutchlab.kit.com/free-gifts">Get the free gifts</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <div class="footer-row">
+          <span><strong>Sprout &amp; Season</strong> — practical digital tools for everyday life, honestly described.</span>
+          <span>AI Prompt Vault · $9.99 · Instant download</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
